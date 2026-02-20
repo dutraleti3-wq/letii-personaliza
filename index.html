@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letí Personalizados</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #f3e6ff);
+    color:#333;
+    text-align:center;
+}
+header{
+    padding:50px 20px;
+}
+h1{
+    color:#e91e63;
+    font-size:40px;
+}
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.btn-primary{
+    background:#9c27b0;
+    color:white;
+}
+.btn-whats{
+    background:white;
+    border:2px solid #9c27b0;
+    color:#9c27b0;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    width:260px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.price{
+    color:#e91e63;
+    font-weight:bold;
+    margin:10px 0;
+}
+footer{
+    margin-top:40px;
+    padding:20px;
+    font-size:14px;
+    color:#777;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Letí Personalizados</h1>
+<p>Arquivos digitais delicados e feitos com carinho 💕</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>Planilha Financeira Premium</h3>
+<p>Organize sua vida financeira com estilo.</p>
+<div class="price">R$29,90</div>
+<button class="btn-primary" onclick="alert('Integre aqui seu link do Mercado Pago')">Comprar</button>
+<br><br>
+<button class="btn-whats" onclick="whats('Planilha Financeira Premium')">Falar no WhatsApp</button>
+</div>
+
+<div class="card">
+<h3>Manual para Dindos</h3>
+<p>Arquivo personalizado emocionante.</p>
+<div class="price">R$24,90</div>
+<button class="btn-primary" onclick="alert('Integre aqui seu link do Mercado Pago')">Comprar</button>
+<br><br>
+<button class="btn-whats" onclick="whats('Manual para Dindos')">Falar no WhatsApp</button>
+</div>
+
+<div class="card">
+<h3>Convite Digital</h3>
+<p>Minimalista e elegante.</p>
+<div class="price">R$19,90</div>
+<button class="btn-primary" onclick="alert('Integre aqui seu link do Mercado Pago')">Comprar</button>
+<br><br>
+<button class="btn-whats" onclick="whats('Convite Digital')">Falar no WhatsApp</button>
+</div>
+
+</div>
+
+<footer>
+© 2026 Letí Personalizados • Todos os direitos reservados
+</footer>
+
+<script>
+function whats(produto){
+    var numero = "5599999999999"; // COLOQUE SEU NÚMERO AQUI
+    var mensagem = "Olá, tenho interesse no produto: " + produto;
+    window.open("https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem));
+}
+</script>
+
+</body>
+</html>
